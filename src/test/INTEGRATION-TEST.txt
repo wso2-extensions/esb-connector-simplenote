@@ -26,7 +26,7 @@ Steps to follow in setting integration test.
 	<messageBuilder contentType="text/html" 
 				class="org.wso2.carbon.relay.BinaryRelayBuilder"/>	
 
- 3. Compress modified ESB as WSO2 ESB 4.9.0.zip and copy that zip file in to location "{SIMPLENOTE_CONNECTOR_HOME}/reposito     ry/".
+ 3. Compress modified ESB as WSO2 ESB 4.9.0.zip and copy that zip file in to location "{SIMPLENOTE_CONNECTOR_HOME}/repository/".
 
  4. Create a Simplenote account and derive the auth token.
 	i)   Using the URL "https://app.simplenote.com/signup/" create a Simplenote account.
@@ -36,16 +36,19 @@ Steps to follow in setting integration test.
 	
 	i)   apiUrl 				- The API URL specific to the created account.
 	ii)  authToken			        - Use the auth token obtained under Step 4 ii).
-	iii) email				- Use the email address which was used to create the SimpleNote account                                                      under step 4. i)
+	iii) email				- Use the email address which was used to create the SimpleNote account            under step 4. i)
 	iv)  esbCreatetagNameMandatory		- A valid string as a new tag name.
 	v)   esbCreatetagNameOptional		- A valid string as a new tag name.
 	vi)  esbIndexOptional			- A valid integer as the tag index.
 	vii) createNoteMandatoryContent		- A valid string as the content of the note. 
 	viii)createNoteOptionalContent		- A valid string as the content of the note.
-	ix)  createNoteCreateDate		- A valid date as the creation date of the note in the format in seconds                                                     since epoch (e.g:- 1421412755.547400).
-	x)   updateNoteOptionalContent		- A valid string as the content of the note. Use a string that is different                                                   to 'createNoteMandatoryContent'.
-	xi)  updateNoteCreateDate		- A valid date as the creation date of the note in the format in seconds                                                     since epoch (e.g:- 1421412755.547400). Use a date different to the value                                                   used in 'createNoteCreateDate'.
-	xii) length				- Use a valid integer as the number of entries to be returned in the                                                         testListNoteIndexesWithOptionalParameters.
+	ix)  createNoteCreateDate		- A valid date as the creation date of the note in the format in seconds
+	since epoch (e.g:- 1421412755.547400).
+	x)   updateNoteOptionalContent		- A valid string as the content of the note. Use a string that is differen
+	to 'createNoteMandatoryContent'.
+	xi)  updateNoteCreateDate		- A valid date as the creation date of the note in the format in seconds           since epoch (e.g:- 1421412755.547400). Use a date different to the value                                                   used in 'createNoteCreateDate'.
+	xii) length				- Use a valid integer as the number of entries to be returned in the
+	testListNoteIndexesWithOptionalParameters.
 	
 	Note:-Change the value of 'esbCreatetagNameOptional' to a different value before each time you run the integration               test.
 
