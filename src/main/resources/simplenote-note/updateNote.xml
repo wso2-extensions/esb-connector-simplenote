@@ -49,41 +49,41 @@
 
         <script language="js">
             <![CDATA[
-			    var payload = mc.getPayloadJSON();
-					   
-				var deleted = mc.getProperty('uri.var.deleted');
-				var modifyDate=mc.getProperty('uri.var.modifyDate');
-				var createDate=mc.getProperty('uri.var.createDate');
-				var systemTags=mc.getProperty('uri.var.systemTags');
-				var tags=mc.getProperty('uri.var.tags');
+                var payload = mc.getPayloadJSON();
+                       
+                var deleted = mc.getProperty('uri.var.deleted');
+                var modifyDate=mc.getProperty('uri.var.modifyDate');
+                var createDate=mc.getProperty('uri.var.createDate');
+                var systemTags=mc.getProperty('uri.var.systemTags');
+                var tags=mc.getProperty('uri.var.tags');
                 var version=mc.getProperty('uri.var.version');
-				
-				if(deleted !=null && deleted!="") {
-					payload.deleted = eval("("+deleted+")");
-				}
-				
-				if(modifyDate !=null && modifyDate!="") {
-					payload.modifydate = modifyDate;
-				}  
-				
-				if(createDate !=null && createDate!="") {
-					payload.createdate = createDate;
-				}  
-		
-				if(systemTags !=null && systemTags!="") {
-					payload.systemtags = eval("("+systemTags+")");
-				}        	      	
-				
-				if(tags !=null && tags!="") {
-					payload.tags = eval("("+tags+")");
-				} 
+                
+                if(deleted !=null && deleted!="") {
+                    payload.deleted = eval("("+deleted+")");
+                }
+                
+                if(modifyDate !=null && modifyDate!="") {
+                    payload.modifydate = modifyDate;
+                }  
+                
+                if(createDate !=null && createDate!="") {
+                    payload.createdate = createDate;
+                }  
+        
+                if(systemTags !=null && systemTags!="") {
+                    payload.systemtags = eval("("+systemTags+")");
+                }        	      	
+                
+                if(tags !=null && tags!="") {
+                    payload.tags = eval("("+tags+")");
+                } 
             
                 if (version != null && version != "") {
-                  payload.version = version; 
+                    payload.version = version; 
                 }                    	
-				
-				mc.setPayloadJSON(payload);
-			]]>
+                
+                mc.setPayloadJSON(payload);
+            ]]>
         </script>
 
         <call>
