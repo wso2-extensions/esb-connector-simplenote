@@ -27,27 +27,27 @@
 
         <script language="js">
             <![CDATA[
-				// optional url param variables
-				var length = mc.getProperty('uri.var.length');
-				var mark = mc.getProperty('uri.var.mark');
-				var since  = mc.getProperty('uri.var.since');
-				
-				var uriParams = '';
-				
-				if (length != null && length != "") {
-					uriParams = 'length=' + length + '&';
-				}				
-				if (mark != null && mark != "") {
-					uriParams += 'mark=' + mark + '&';
-				}				
-				if (since != null && since != "") {
-					uriParams += 'since=' + since + '&';
-				}				
-							
-				if(uriParams != ''){
-					mc.setProperty('uri.var.uriParams' , uriParams.substring(0, uriParams.length-1));
-				}
-			]]>
+                // optional url param variables
+                var length = mc.getProperty('uri.var.length');
+                var mark = mc.getProperty('uri.var.mark');
+                var since  = mc.getProperty('uri.var.since');
+
+                var uriParams = '';
+
+                if (length != null && length != "") {
+                    uriParams = 'length=' + length + '&';
+                }
+                if (mark != null && mark != "") {
+                    uriParams += 'mark=' + mark + '&';
+                }
+                if (since != null && since != "") {
+                    uriParams += 'since=' + since + '&';
+                }
+
+                if(uriParams != ''){
+                    mc.setProperty('uri.var.uriParams' , uriParams.substring(0, uriParams.length-1));
+                }
+            ]]>
         </script>
 
         <call>
