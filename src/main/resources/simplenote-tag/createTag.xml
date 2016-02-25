@@ -38,21 +38,20 @@
 
         <script language="js">
             <![CDATA[
-			var index = mc.getProperty('uri.var.index');
-			var version = mc.getProperty('uri.var.version');
-						
-			var payload = mc.getPayloadJSON();
-				
-			if (index != null && index != "") {
-				payload.index = index;	
-			}
-				
-			if (version != null && version != "") {
-				payload.version = version;	
-			} 
-			
-			mc.setPayloadJSON(payload);
-		]]>
+                var index = mc.getProperty('uri.var.index');
+                var version = mc.getProperty('uri.var.version');
+
+                var payload = mc.getPayloadJSON();
+
+                if (index != null && index != "") {
+                    payload.index = index;
+                }
+
+                if (version != null && version != "") {
+                    payload.version = version;
+                }
+                 mc.setPayloadJSON(payload);
+            ]]>
         </script>
 
         <call>
