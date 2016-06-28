@@ -48,7 +48,7 @@ public class SimplenoteConnectorIntegrationTest extends ConnectorIntegrationTest
     @BeforeClass(alwaysRun = true)
     public void setEnvironment() throws Exception {
 
-        init("simplenote-connector-1.0.1-SNAPSHOT");
+        init("simplenote-connector-1.0.1");
         esbRequestHeadersMap.put("Accept-Charset", "UTF-8");
         esbRequestHeadersMap.put("Content-Type", "application/json");
 
