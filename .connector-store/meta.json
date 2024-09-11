@@ -4,7 +4,7 @@
     "category": "Productivity Tools",
     "documentationUrl": "https://docs.wso2.com/display/ESBCONNECTORS/Simplenote+Connector",
     "description": "The Simplenote connector allows you to access the Simplenote REST API through the WSO2 ESB. Simplenote is a platform for notes that supports sharing, tagging and trashing.",
-    "status": "Active",
+    "status": "Inactive",
     "labels": [
         "connector"
     ],
